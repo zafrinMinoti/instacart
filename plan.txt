@@ -1,0 +1,53 @@
+===============================
+Exploratory Data Analysis (EDA)
+===============================
+- Heatmap of when people shop - Identifies the busiest/slowest grocery shopping items
+- Most popular Items, departments and aisles
+- 
+
+-------------------------------
+
+
+
+===============================
+Feature Extraction
+===============================
+user+items features
+-------------------------------
+    user_id* | 
+    product_id* | 
+    %orders_containing_product | 
+    reordered | 
+    add_to_cart_order | 
+    order_dow | 
+    order_hod | 
+    days_since_last_bought_the_item | 
+    orders_since_last_bought_this_item | 
+
+-------------------------------
+item-wise features
+-------------------------------
+    aisle_id | 
+    department_id | 
+    avg_%orders_containing_product
+    avarage_days_since_last_baught
+    avg_add_to_cart_order
+
+-------------------------------
+user-wise features
+-------------------------------
+    avg_number_of_items
+    avg_item_from_dept
+    avg_item_from_aisle
+    
+
+-------------------------------
+%orders_containing_product = number_of_times_product_baught/total_number_of_orders
+
+
+====================================
+Challenges
+====================================
+- How to find similar items - eg. 2 brands of butter
+- clustering users into group based on their purchesing behavior
+- cluster products into group based on organic, cheap, etc.
